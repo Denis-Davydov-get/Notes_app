@@ -1,11 +1,9 @@
 from read_file import read_file
-
-
 def search_in_data():
     df = read_file()
     print(df)
-    choise = int(input("По какому признаку фильтровать:"
-                       "1 - по дате."
+    choice = int(input("По какому признаку фильтровать:"
+                       "1 - по часам."
                        "2 - по месяцу."
                        "3 - по году."
                        ))
