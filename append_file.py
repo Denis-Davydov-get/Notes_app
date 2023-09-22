@@ -10,9 +10,9 @@ def append_file(): # добавление
     append_df = pd.DataFrame(dict(id=[len(df)],
                                   Header=[header],
                                   Text=[text],
-                                  Date=[time.strftime('%d:%m:%Y')],
-                                  Time=[time.strftime('%H:%M:%S')])
+                                  Date=[time.strftime('%d:%m:%Y-%H:%M:%S')])
                              )
-
     result = df._append(append_df, ignore_index = True)
     return result.to_csv("file_csv.csv", sep=";", index=False)
+
+
