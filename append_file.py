@@ -15,6 +15,7 @@ def append_file(): # добавление
                                   Date=[date.today()])
                              )
     result = df._append(append_df, ignore_index = True)
+    print("Заметка успешно добавлена.")
     return result.to_csv("file_csv.csv", sep=";", index=False)
 
 

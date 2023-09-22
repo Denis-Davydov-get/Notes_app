@@ -11,7 +11,7 @@ def search_in_data():
     choice_right = input("Введите дату конца периода в формате (yyyy-mm-dd)")
     df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
     sort_df = df.loc[(df['Date'] >= choice_left)
-                         & (df['Date'] < choice_right)]
+                         & (df['Date'] <= choice_right)]
     print(sort_df)
 
 

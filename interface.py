@@ -1,6 +1,7 @@
 import append_file
 import del_row
 import edit_file
+import print_file
 import read_file
 import save_file
 import sort_data
@@ -17,7 +18,7 @@ def init_choice():
 
 
     if choice == 1:
-        read_file.read_file()
+        print_file.print_file()
     elif choice == 2:
         append_file.append_file()
     elif choice == 3:
