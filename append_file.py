@@ -1,4 +1,6 @@
 import time
+from datetime import datetime, date
+
 import pandas as pd
 import read_file
 
@@ -10,7 +12,7 @@ def append_file(): # добавление
     append_df = pd.DataFrame(dict(id=[len(df)],
                                   Header=[header],
                                   Text=[text],
-                                  Date=[time.strftime('%d:%m:%Y-%H:%M:%S')])
+                                  Date=[date.today()])
                              )
     result = df._append(append_df, ignore_index = True)
     return result.to_csv("file_csv.csv", sep=";", index=False)

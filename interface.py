@@ -3,7 +3,7 @@ import del_row
 import edit_file
 import read_file
 import save_file
-import search_in_data
+import sort_data
 
 
 def init_choice():
@@ -25,7 +25,7 @@ def init_choice():
     elif choice == 4:
         save_file.save_file()
     elif choice == 5:
-        search_in_data.search_in_data()
+        sort_data.search_in_data()
     elif choice == 6:
         edit_file.edit_file()
     else:
